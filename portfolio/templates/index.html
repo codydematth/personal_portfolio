@@ -1,0 +1,333 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1024" /> 
+
+    <title>Codydematth-Online</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="{% static 'my_portfolio/css/style.css'%}" />
+    <link id="theme-style" href="stylesheet" type="text/css" href=" " />
+  </head>
+  <body class="body-clr">
+    <!-- Header -->
+   {% include 'nav.html' %}
+    <!-- profile section -->
+    <div class="wrapper">
+      <h2 class="my-name">Hi, I'm Mathias Cody</h2>
+    </div>
+    <!-- Navigation -->
+    <div class="profile-wrapper p-0" id="container">
+      <div class="dot_url p-2">
+        <div class="dotWrapper my-auto">
+          <div class="dotYellow"></div>
+          <div class="dotGreen"></div>
+          <div class="dotRed"></div>
+        </div>
+        <div class="nav-wrapper">
+          <ul class="my-auto">
+
+          
+            <a href="{% static 'my_portfolio/Mathias_Resume.pdf' %}" target="_blank">Download-Resume</a>
+          
+            
+          </ul>
+        </div>
+      </div>
+      <!-- Left Column -->
+      <section class="profile">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="pflimage">
+                <img
+                  class="img-wrapper"
+                  src="{% static 'my_portfolio/img/pic.jpg'%}"
+                  alt=""
+                />
+
+                <h2 class="theme-text pt-2 text-center">Web Developer</h2>
+               
+              </div>
+            </div>
+            <!-- RightColumn -->
+            <!-- About me Section -->
+            <!-- Left Column -->
+            <div class="col">
+              <div class="col-6 right-column">
+                <div id="preview-shadow">
+                  <div id="preview" class="sm-w-200">
+                    <div id="corner-tl" class="corner"></div>
+                    <div id="corner-tr" class="corner"></div>
+                    <h3>About Me</h3>
+                    <p>
+                      I am developer that willing to work hard and learn more.
+                    </p>
+                    <!-- <hr />
+                    <p>
+                      I build new projects just to tickle my brain and love
+                      learn more from others. <br />
+                      While I keep busy study and practicing, I still take
+                      interviews in search of a great team & projects that
+                      interest me.
+                    </p> -->
+
+                    <div id="corner-br" class="corner"></div>
+                    <div id="corner-bl" class="corner"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <hr />
+    <section class="s2">
+      <div class="main-container">
+        <div class="about-wrapper">
+          <div class="about-me">
+            <h4>More about me</h4>
+
+            <p>
+              I build new projects just to tickle my brain and love learn more
+              from others.
+            </p>
+
+            <p>
+              While I keep busy study and practicing, I still take interviews in
+              search of a great team & projects that interest me.
+            </p>
+
+            <hr />
+
+            <h4>TOP EXPERTISE</h4>
+
+            <p>
+              Fullstack developer with primary focus on Django + React:
+              <!-- <a
+                target="_blank"
+                href="{% static 'my_portfolio/Mathias_Resume.pdf'%}"
+                >Download Resume</a
+              > -->
+            </p>
+
+            <div id="skills">
+              <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Postgres SQL</li>
+                <li>Scappy</li>
+              </ul>
+
+              <ul>
+                <li>Linux</li>
+                <li>Git</li>
+                <li>Tailwind CSS</li>
+                <li>AWS (RDS/S3)</li>
+                <li>Bootstrap</li>
+                <li>HTML5&CSS3</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Right Section -->
+
+          <div class="social-links">
+            <img
+              id="social_img"
+              src="{% static 'my_portfolio/img/follow.png' %}"
+            />
+            <h3>Find me on Telegram & Discord</h3>
+
+            <a target="_blank" href="https://t.me/codydematth"
+              >Telegram: @Codydemath</a
+            >
+            <br />
+            <a target="_blank" href="https://discord.com/codydematth#0355"
+              >Discord: @Codydematth</a
+            >
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    
+
+    <!-- Project Section -->
+    <section class="s1 bg-white pt-4">
+      <div class="main-container">
+        <h3 style="text-align: center">Some of my past projects</h3>
+
+        
+          <div class="post-wrapper ">
+            {% for post in posts %}
+              <div>
+                  <div class="post">
+                    <img
+                      class="thumbnail"
+                      src="{{post.thumbnail.url}}"
+                    />
+                    <div class="post-preview">
+                      <h6 class="post-title">{{post.headline}}</h6>
+                      <p class="post-intro">
+                        {{post.sub_headline}}
+                      </p>
+                      <a href="{% url 'post' post.slug %}">Read More</a>
+                    </div>
+                  </div>
+              </div>
+      
+            {% endfor %}
+         
+        </div>
+        <p class="text-center ">
+          <a href="{% url 'posts' %}" class="text-center"> View More</a>
+        </p>
+          
+      
+      </div>
+       <hr>
+    </section>
+   
+    <section class="contact-section">
+      <!--Section heading-->
+          <h2 class="h1-responsive font-weight-bold text-center my-4">
+            Get In Touch
+          </h2>
+    
+      <div class="container w-50 contact pt-3 mb-4">
+        <!--Section: Contact-->
+        <section class="mb-0">
+          
+        
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-12 mb-md-0 mb-5 mb-sm-2">
+              <form
+                id="contact-form"
+                name="contact-form"
+                action="{% url 'send_email' %}"
+                method="POST"
+              >
+              {% csrf_token %}
+                <!--Grid row-->
+                <div class="row text-center">
+                  <!--Grid column-->
+                  <div class="col-md-6 te">
+                    <div class="md-form mb-0">
+                      <label for="name" class="">Your name</label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                   
+                      <label for="email" class="">Your email</label>
+                      <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row text-center">
+                  <div class="col-md-12">
+                    <div class="md-form mb-0">
+                      <label for="subject" class="">Subject</label>
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row text-center">
+                  <!--Grid column-->
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <label for="message">Your message</label>
+                      <textarea
+                        type="text"
+                        id="message"
+                        name="message"
+                        rows="5"
+                        class="form-control md-textarea"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center text-md-left mb-4 mt-2">
+                  <button
+                    class="btn btn-secondary"
+                    type="sumbit"
+                    id="submit-btn"
+                    >Send</button>
+                  
+                </div>
+                <!--Grid row-->
+              </form>
+
+              
+           
+            <!--Grid column-->
+          </div>
+        </section>
+        <!--Section: Contact v.2-->
+       
+      </div>
+      
+    </section>
+  
+  </body>
+</html>
+{% endblock %}
