@@ -9,7 +9,7 @@ from django.template.loader import render_to_string
 
 # Create your views here.
 def homeView(request):
-    posts = Post.objects.filter(active=True, featured=True)[0:3]
+    posts = Post.objects.filter(active=True, featured=True)
 
     context = {'posts': posts}
     return render(request, 'index.html', context)
